@@ -6,7 +6,7 @@ function bingoNumber() {
 
     let x = Math.floor((Math.random() * 50) + 1);
     let y = Math.floor((Math.random() * 4) + 1);
-    return alphabet[y] + x;
+    document.getElementById("number").innerHTML = alphabet[y] + "-" + x;
 }
 
 function startGame() {
@@ -36,3 +36,4 @@ function startGame() {
     document.getElementById("O4link").innerHTML = Math.floor((Math.random() * 50) + 1);
     document.getElementById("O5link").innerHTML = Math.floor((Math.random() * 50) + 1);
 }
+let bingoTimer = setInterval(bingoNumber, 5000);
