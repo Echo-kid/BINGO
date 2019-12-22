@@ -5,7 +5,7 @@ function bingoNumber() {
     let alphabet = ["B", "I", "N", "G", "O"];
 
     let x = Math.floor((Math.random() * 50) + 1);
-    let y = Math.floor((Math.random() * 4) + 1);
+    let y = Math.floor((Math.random() * 5));
     document.getElementById("number").innerHTML = alphabet[y] + "-" + x;
 }
 
