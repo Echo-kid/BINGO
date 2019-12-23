@@ -37,3 +37,7 @@ function startGame() {
     document.getElementById("O5link").innerHTML = Math.floor((Math.random() * 50) + 1);
 }
 let bingoTimer = setInterval(bingoNumber, 5000);
+
+function markNumber(id) {
+    document.getElementById(id).innerHTML = "X";
+}
